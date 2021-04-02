@@ -55,7 +55,7 @@ const Main = () =>{
                     {/* <!-- Left Content --> */}
                     <div className="list-news row col-lg-8">
                         <article className="news">
-                            <img src = {'./freestyle_arm_stroke.jpg'} alt=""/>
+                            <img src = {'../../freestyle_arm_stroke.jpg'} alt=""/>
                             <div className="caption">
                                 <div className="category-news">
                                     <a href="">

@@ -1,0 +1,39 @@
+.menu{
+    width: 600px;
+    height: 700px;
+    background: #25b3e3;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 3;
+    color:#fff;
+    display: none;
+}
+
+.menu ul {
+    padding: 0;
+    margin: 140px 0 0 140px;   
+    list-style: none;
+}
+
+.menu ul li.separator {
+    margin: 50px 0;
+    height: 1px;
+    background: #fff;
+    max-width: 220px;
+}
+
+.menu ul li{
+    margin: 20px 0;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    letter-spacing: 10px;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 0 20px;
+    margin: 10px 0;
+}
