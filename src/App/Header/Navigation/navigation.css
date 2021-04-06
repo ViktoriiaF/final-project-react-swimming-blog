@@ -52,3 +52,12 @@
     font-weight: 700;
     text-transform: uppercase;
 }
+
+@media(max-width: 767px){
+    .top-menu .right-end a:nth-child(2){
+        display: none;
+    }
+    .top-menu .right-end a:nth-child(3){
+        display: none;
+    }
+}

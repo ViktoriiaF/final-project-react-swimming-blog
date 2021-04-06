@@ -21,7 +21,7 @@ footer .container .row{
     word-wrap: inherit;
     font-size: 27px;
     font-family: "Bebas Neue", sans-serif;
-    background-color: black;
+    background-color: #11182b;
     color: #fff;
 }
 
@@ -31,7 +31,7 @@ footer .container .row{
     font-family: "Bebas Neue", sans-serif;
 }
 
-.socialIcons>img{
+.socialIcons>a>img{
     margin-left: 30px;
     margin-top: 15px;
 }
@@ -42,4 +42,30 @@ footer .container .row{
     background-color: #11182b;
     align-items: center;
     
+}
+
+@media(max-width: 767px){
+    footer .container .row{
+        flex-wrap: wrap;
+    }
+
+    .footer .logo button{
+        width: 100px;
+        height: 70px;
+        font-size: 24px;
+        margin-top: 15px;
+    }
+
+    .socialIcons span{
+        font-size: 20px;
+    }
+
+    .socialIcons a img{ 
+        width: 30px;
+        height: 30px;
+    }
+
+    .copyright{
+        font-size: 15px;
+    }
 }

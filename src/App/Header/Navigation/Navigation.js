@@ -7,7 +7,7 @@ const Navigation=()=>{
         <nav>
                 <div className="container">
                     <div className="row top-menu">
-                        <div className="left col-lg-6">
+                        <div className="left col-lg-6 col-sm-6">
                             <button className="btn-menu">
                                 <span></span>
                                 <span></span>
@@ -17,7 +17,7 @@ const Navigation=()=>{
                                 Swimming every day
                             </div>
                         </div>
-                        <div className="right-end col-lg-6">
+                        <div className="right-end col-lg-6 col-sm-6">
                             <a href="" className="btn btn-link">Home</a>
 
                             <a href="" className="btn btn-primary btn-rounded btn-login hidden-sm-down"><span>Log in</span>

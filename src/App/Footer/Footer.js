@@ -10,15 +10,15 @@ const Footer = () =>{
     <footer >
         <div className="container">
             <div className="row footer">
-                <div className="logo col-lg-5">
+                <div className="logo col-lg-5 col-sm-12">
                     <button>Swimming every day</button>
                 </div>
-                <div className="socialIcons col-lg-7">
+                <div className="socialIcons col-lg-7 col-sm-12">
                     <span>Stay In Touch:</span>
-                    <img src={iconFacebook}></img>
-                    <img src={iconYoutube}></img>
-                    <img src={iconInstagram}></img>
-                    <img src={iconTwitter}></img>                
+                    <a href=""><img src={iconFacebook}></img></a>
+                    <a href=""><img src={iconYoutube}></img></a>
+                    <a href=""> <img src={iconInstagram}></img></a>
+                    <a href=""><img src={iconTwitter}></img></a>                                   
                 </div>
             </div>
             <div className="row copyright">

@@ -8,12 +8,12 @@ const Main = () =>{
     <main>
         <div className="container container-white">
             <div className="container-inner">
-                <div className="row col-lg-12 centre">
+                <div className="row col-lg-12 col-sm-12 centre">
                     <div className="title-category">Category:</div>
                 </div>
                 {/* <!-- Category List --> */}
                 <div className="row sticky-el">
-                    <div className="category-list col-lg-12">
+                    <div className="category-list col-lg-12 col-sm-12">
                         <ul>
                             <li>
                                 <a href="">
@@ -52,9 +52,9 @@ const Main = () =>{
                 {/* <!-- /Category List --> */}
 
                 {/* <!-- Content --> */}
-                <div className="blog-content row col-lg-12">
+                <div className="blog-content row col-lg-12 col-sm-12">
                     {/* <!-- Left Content --> */}
-                    <div className="list-news row col-lg-8">
+                    <div className="list-news row col-lg-8 col-sm-12">
                         <article className="news">
                             <img src = {testImage} alt=""/>
                             <div className="caption">
@@ -83,9 +83,9 @@ const Main = () =>{
                                 </div>
                             </div>
                         </article>
-                        <article className="news">
+                        {/* <article className="news">
                             <img src={"./freestyle_arm_stroke.jpg"} alt=""></img>
-                        </article>
+                        </article> */}
                     </div>
                     {/* <!-- /Left Content --> */}
                     {/* <!-- Right Content --> */}
