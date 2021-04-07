@@ -73,8 +73,8 @@ const Main = () =>{
                                 <div className="meta-news">
                                     Written by:
                                 </div>
-                                <div className="sta-news">
-                                    <button className="btn-news">
+                                <div className="sta-news row">
+                                    <button className="btn-news ">
                                         Read more
                                     </button>
                                     <span className="btn-lable">

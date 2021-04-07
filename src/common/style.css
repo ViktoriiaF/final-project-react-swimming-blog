@@ -23,7 +23,7 @@ body{
 
 .container-white{
     background-color: #fff;
-    width: 98%;
+    width: 90%;
 }
 
 .row{
@@ -93,7 +93,7 @@ body{
 
 @media(min-width:992px){
     .container{
-        max-width: 960px;
+        max-width: 100%;
     }
     .col-md-1{
         flex: 0 0 8.33333%;

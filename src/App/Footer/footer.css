@@ -45,6 +45,7 @@ footer .container .row{
 }
 
 @media(max-width: 767px){
+    
     footer .container .row{
         flex-wrap: wrap;
     }
