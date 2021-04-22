@@ -2,44 +2,42 @@ import React from 'react'
 import {  Link } from 'react-router-dom'
 
 
-const CategoryList=({
-    match
-})=>{
-    console.log(match)
+const CategoryList=()=>{
+    
     return(
         <div className="row sticky-el">
                 <div className="category-list col-lg-12 col-sm-12">
                     <ul>
                          <li>
-                             <Link to={`"/A Swimmer's life"`}>
+                             <Link to={`/articles/A Swimmer's life`}>
                                  <span>A Swimmer's life</span>
                              </Link>
                          </li>
                          <li>
-                             <>
+                             <Link to={`/articles/Fitness & Wellness`}>
                                 <span>Fitness & Wellness</span>
-                             </>
+                             </Link>
                              
                          </li>
                          <li>
-                             <a href="">
+                             <Link to={`/articles/Insider Advice`}>
                                  <span>Insider Advice</span>
-                             </a>
+                             </Link>
                          </li>
                          <li>
-                             <a href="">
+                             <Link to={`/articles/Just for Women`}>
                                  <span>Just for Women</span>
-                             </a>
+                             </Link>
                          </li>
                          <li>
-                             <a href="">
+                             <Link to={`/articles/Swim Tech`}>
                                  <span>Swim Tech</span>
-                             </a>
+                             </Link>
                          </li>
                          <li>
-                             <a href="">
+                             <Link to={`/articles/Training & Technique`}>
                                  <span>Training & Technique</span>
-                             </a>
+                             </Link>
                          </li>
                          <li className="separator"></li>
                      </ul>

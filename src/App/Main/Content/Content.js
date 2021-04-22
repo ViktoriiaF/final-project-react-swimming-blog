@@ -1,4 +1,5 @@
 import React from 'react'
+import { Route } from 'react-router'
 import ArticleList from './Articles/ArticleList'
 
 
@@ -7,7 +8,10 @@ const Content=()=>{
         <div className="blog-content row col-lg-12 col-sm-12">
                     {/* <!-- Left Content --> */}
                  <div className="list-news row col-lg-8 col-sm-12">
-                        <ArticleList/>
+                        <Route path="/" exact component={ArticleList}/>                        
+                        <Route path="/articles/:category" component={ArticleList}/>
+                        {/* <ArticleList/> */}
+                        
                         
                 </div>
                         {/* <!-- /Left Content --> */}

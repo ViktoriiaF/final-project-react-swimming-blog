@@ -2,11 +2,14 @@ import React from 'react'
 import ArticleListItem from './ArticleListItem'
 import articles from './articles'
 
-const ArticleList = () =>{
+const ArticleList = ({
+    match
+}) =>{
+    console.log(match)
     return(
         <>
             {
-                articles.map(({
+                articles.filter(match.params.category?x => x.category===match.params.category:x=>x).map(({
                     id,
                     category,
                     title,

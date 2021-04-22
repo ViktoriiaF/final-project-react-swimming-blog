@@ -15,10 +15,10 @@ const Footer = () =>{
                 </div>
                 <div className="socialIcons col-lg-7 col-sm-12">
                     <span>Stay In Touch:</span>
-                    <a href=""><img src={iconFacebook}></img></a>
-                    <a href=""><img src={iconYoutube}></img></a>
-                    <a href=""> <img src={iconInstagram}></img></a>
-                    <a href=""><img src={iconTwitter}></img></a>                                   
+                    <a href="/"><img src={iconFacebook} alt=""></img></a>
+                    <a href="/"><img src={iconYoutube} alt=""></img></a>
+                    <a href="/"> <img src={iconInstagram} alt=""></img></a>
+                    <a href="/"><img src={iconTwitter} alt=""></img></a>                                   
                 </div>
             </div>
             <div className="row copyright">

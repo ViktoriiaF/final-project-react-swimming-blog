@@ -12,10 +12,10 @@ const Main = () =>{
             <div className="container-inner">
                 <div className="row col-lg-12 col-sm-12 centre">
                     <div className="title-category">Category:</div>
-                </div>                
-                {/* <Route path="/" exact component={CategoryList}/>
-                <Route path="/category" component={CategoryList}/> */}
-                <CategoryList/>
+                </div>  
+                             
+                <CategoryList/>             
+               
                 <Content/>     
             </div>            
         </div>

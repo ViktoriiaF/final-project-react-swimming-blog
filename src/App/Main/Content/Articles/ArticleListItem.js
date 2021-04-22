@@ -14,7 +14,7 @@ const ArticleListItem=({
             <img src = {image} alt=""/>
             <div className="caption">
                 <div className="category-news">
-                    <a href="">
+                    <a href="/">
                         <span> {category} </span>
                     </a>
                 </div>

@@ -8,32 +8,32 @@ const Menu=()=>{
         <ul>
             <li className="separator"></li>
             <li>
-                <a href="">
+                <a href="/">
                     <span>A Swimmer's life</span>
                 </a>
             </li>
             <li>
-                <a href="">
+                <a href="/">
                     <span>Fitness & Wellness</span>
                 </a>
             </li>
             <li>
-                <a href="">
+                <a href="/">
                     <span>Insider Advice</span>
                 </a>
             </li>
             <li>
-                <a href="">
+                <a href="/">
                     <span>Just for Women</span>
                 </a>
             </li>
             <li>
-                <a href="">
+                <a href="/">
                     <span>Swim Tech</span>
                 </a>
             </li>
             <li>
-                <a href="">
+                <a href="/">
                     <span>Training & Technique</span>
                 </a>
             </li>
