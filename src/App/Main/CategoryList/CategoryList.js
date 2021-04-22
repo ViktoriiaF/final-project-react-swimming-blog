@@ -1,19 +1,25 @@
 import React from 'react'
+import {  Link } from 'react-router-dom'
 
-const CategoryList=()=>{
+
+const CategoryList=({
+    match
+})=>{
+    console.log(match)
     return(
         <div className="row sticky-el">
                 <div className="category-list col-lg-12 col-sm-12">
                     <ul>
                          <li>
-                             <a href="">
+                             <Link to={`"/A Swimmer's life"`}>
                                  <span>A Swimmer's life</span>
-                             </a>
+                             </Link>
                          </li>
                          <li>
-                             <a href="">
-                                 <span>Fitness & Wellness</span>
-                             </a>
+                             <>
+                                <span>Fitness & Wellness</span>
+                             </>
+                             
                          </li>
                          <li>
                              <a href="">
