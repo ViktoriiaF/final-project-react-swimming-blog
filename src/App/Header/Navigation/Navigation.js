@@ -8,7 +8,7 @@ const Navigation=({
 })=>{
 
     const  handleClick =value=>(e)=> {
-        e.preventDefault();          
+                  
         setCategory(value)          
       }
     return(
