@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState} from 'react'
 
 import '../common/reset.css'
 import '../common/style.css'
@@ -10,10 +10,16 @@ import Main from './Main/Main'
 import Footer from './Footer/Footer'
 
 const App=()=>{
+    const [category, setCategory]=useState("Swimming Blog")
     return(
         <>
-        <Header/>
-        <Main/>
+        <Header
+            setCategory={setCategory}
+        />
+        <Main
+            setCategory={setCategory}
+            category={category}
+        />
         <Footer/>
      </>
     )

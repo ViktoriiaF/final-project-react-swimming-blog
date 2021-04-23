@@ -8,6 +8,7 @@ const ArticleListItem=({
     description,
     meta,
     image
+    
 })=>{
     return(
         <article className="news">
@@ -48,3 +49,4 @@ ArticleListItem.propTypes={
 }
 
 export default ArticleListItem
+

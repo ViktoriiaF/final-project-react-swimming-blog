@@ -5,18 +5,28 @@ import { Route } from "react-router-dom"
 
 import './main.css'
 
-const Main = () =>{
+const Main = ({
+    setCategory,
+    category
+}) =>{
+    
+    
+    
     return(
     <main>
         <div className="container container-white">
             <div className="container-inner">
                 <div className="row col-lg-12 col-sm-12 centre">
-                    <div className="title-category">Category:</div>
+                    <div className="title-category">{category}</div>
                 </div>  
                              
-                <CategoryList/>             
+                <CategoryList                    
+                    setCategory={setCategory}
+                />             
                
-                <Content/>     
+                <Content
+                    
+                />     
             </div>            
         </div>
     </main>

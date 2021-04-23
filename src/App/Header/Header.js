@@ -5,11 +5,15 @@ import './header.css'
 import Navigation from './Navigation/Navigation'
 import Menu from './Menu/Menu'
 
-const Header=()=>{
+const Header=({
+    setCategory
+})=>{
     return(
         <header>
        
-           <Navigation/>
+           <Navigation
+            setCategory={setCategory}
+           />
 
            <Menu/>          
 

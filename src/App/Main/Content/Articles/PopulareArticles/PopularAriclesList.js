@@ -1,15 +1,14 @@
 import React from 'react'
-import ArticleListItem from './ArticleListItem'
-import articles from './articles'
+import PopularArticlesListItem from './PopularArticlesLiasItem'
+import articles from '../articles'
 
-const ArticleList = ({
-    match
-}) =>{
-    
+const PopularArticlesList = () =>{
     return(
         <>
-            {
-                articles.filter(match.params.category?x => x.category===match.params.category:x=>x).map(({
+             
+    {
+            
+                articles.sort((a, b) => b - a).slice(0,5).map(({
                     id,
                     category,
                     title,
@@ -18,8 +17,8 @@ const ArticleList = ({
                     image,
                     rating
                 })=>(
-                   <div className="col-lg-6 col-sm-12" key={id}>
-                    <ArticleListItem
+                   <div className="popular-post-box" key={id}>
+                    <PopularArticlesListItem
                         id={id}
                         category={category}
                         title={title}
@@ -31,8 +30,11 @@ const ArticleList = ({
                    </div>
                 ))
             }
+            
+
+                              
         </>
     )
 }
 
-export default ArticleList
+export default PopularArticlesList

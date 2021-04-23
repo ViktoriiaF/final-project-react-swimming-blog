@@ -3,7 +3,14 @@ import { Link } from 'react-router-dom'
 
 import './navigation.css'
 
-const Navigation=()=>{
+const Navigation=({
+    setCategory
+})=>{
+
+    const  handleClick =value=>(e)=> {
+        e.preventDefault();          
+        setCategory(value)          
+      }
     return(
         <nav>
                 <div className="container">
@@ -19,7 +26,7 @@ const Navigation=()=>{
                             </div>
                         </div>
                         <div className="right-end col-lg-6 col-sm-6">
-                            <Link to="/" >Home</Link>
+                            <Link to="/" onClick={handleClick("Swimming Blog")}>Home</Link>
 
                             <a href="/" className="btn btn-primary btn-rounded btn-login hidden-sm-down"><span>Log in</span>
                             </a>
