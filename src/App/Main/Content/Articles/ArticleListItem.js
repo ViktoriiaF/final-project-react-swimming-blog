@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { Link } from 'react-router-dom'
 
 
 const ArticleListItem=({
@@ -15,9 +16,9 @@ const ArticleListItem=({
             <img src = {image} alt=""/>
             <div className="caption">
                 <div className="category-news">
-                    <a href="/">
+                    <Link to={`/articles/${category}`}>
                         <span> {category} </span>
-                    </a>
+                    </Link>
                 </div>
                 <div className="title-news">
                    {title}
@@ -28,6 +29,7 @@ const ArticleListItem=({
                 <div className="meta-news">
                    {meta}
                 </div>
+                <Link to ="/article">Article</Link>
                 <div className="sta-news row">
                     <button className="btn-news ">
                         Read more

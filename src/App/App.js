@@ -11,8 +11,20 @@ import Footer from './Footer/Footer'
 
 const App=()=>{
     const [category, setCategory]=useState("Swimming Blog")
+    const [count, setCount] = useState([0, 0, 0]);
+
+  
+   const changeCount=(count,i)=>{
+        count[i]+=1
+        console.log(i)
+        return [...count]
+        
+    }
+  
     return(
+        
         <>
+        
         <Header
             setCategory={setCategory}
         />
@@ -21,7 +33,7 @@ const App=()=>{
             category={category}
         />
         <Footer/>
-     </>
+        </>
     )
 }
 

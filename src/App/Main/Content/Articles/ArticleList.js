@@ -18,7 +18,7 @@ const ArticleList = ({
                     image,
                     rating
                 })=>(
-                   <div className="col-lg-6 col-sm-12" key={id}>
+                   <div className="col-lg-6 col-sm-12 col-md-12" key={id}>
                     <ArticleListItem
                         id={id}
                         category={category}

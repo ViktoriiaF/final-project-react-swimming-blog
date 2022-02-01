@@ -37,9 +37,9 @@ body{
     padding-right: 15px;
 }
 
-@media(min-width:768px),(max-width: 767px){
+@media(max-width:991px){
     .container{
-        max-width: 720px;
+        max-width: 950px;
     }
     .col-sm-1{
         flex: 0 0 8.33333%;
