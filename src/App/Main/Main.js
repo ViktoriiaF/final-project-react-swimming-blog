@@ -1,7 +1,6 @@
 import React from 'react'
 import CategoryList from './CategoryList/CategoryList'
 import Content from './Content/Content'
-import ArticlePage from './Content/ArticlePage/ArticlePage'
 import { Route } from "react-router-dom"
 
 import './main.css'
@@ -27,7 +26,7 @@ const Main = ({
                 <Route path="/" exact render={()=><CategoryList  
                            setCategory={setCategory}
                 />}/>          
-               <Route path="/article" component={ArticlePage}/>  
+               
                 <Content
                     
                 /> 
