@@ -1,9 +1,9 @@
-import React from 'react'
-import CategoryList from './CategoryList/CategoryList'
-import Content from './Content/Content'
-import { Route } from "react-router-dom"
+import React from 'react';
+import CategoryList from './CategoryList/CategoryList';
+import Content from './Content/Content';
+import { Route } from "react-router-dom";
 
-import './main.css'
+import './main.css';
 
 const Main = ({
     setCategory,
@@ -23,12 +23,15 @@ const Main = ({
                 {/* <CategoryList                    
                     setCategory={setCategory}
                 />    */}
-                <Route path="/" exact render={()=><CategoryList  
-                           setCategory={setCategory}
-                />}/>          
+                <div className="row sticky-el"> 
+                    <Route path="/" render={()=><CategoryList  
+                            setCategory={setCategory}
+                    />}/>     
+                </div>
+                    
                
                 <Content
-                    
+                    setCategory={setCategory}
                 /> 
 
                   

@@ -15,7 +15,7 @@ const CategoryList=({
         
       
     return(
-        <div className="row sticky-el">
+        
                 <div className="category-list col-lg-12 col-sm-12">
                     <ul>
                          <li>
@@ -53,7 +53,7 @@ const CategoryList=({
                          <li className="separator"></li>
                      </ul>
                 </div>
-        </div>
+        
     )
 }
 

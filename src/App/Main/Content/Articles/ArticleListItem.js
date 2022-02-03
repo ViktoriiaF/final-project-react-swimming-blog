@@ -4,19 +4,32 @@ import { Link } from 'react-router-dom'
 
 
 const ArticleListItem=({
+    id,
     category,
     title,
     description,
     meta,
-    image
+    image,
+    setCategory,
     
 })=>{
+    
+    const  handleClick =value=>(e)=> {
+        
+        setCategory.useEffect=(value)=>{
+            let categoryTitle=document.getElementsByClassName('title-category');
+           categoryTitle[0].innerHtml=`{value}`;
+        } ;           
+                 
+      }; 
+
+    
     return(
         <article className="news">
             <img src = {image} alt=""/>
             <div className="caption">
                 <div className="category-news">
-                    <Link to={`/articles/${category}`}>
+                    <Link to={`/articles/${category}`}  onClick={() => handleClick(category)}>
                         <span> {category} </span>
                     </Link>
                 </div>
@@ -29,15 +42,16 @@ const ArticleListItem=({
                 <div className="meta-news">
                    {meta}
                 </div>
-                <Link to ="/article">Article</Link>
-                <div className="sta-news row">
-                    <button className="btn-news ">
-                        Read more
-                    </button>
-                    <span className="btn-lable">
-                        <i className="plus">+</i>
-                    </span>
-                </div>
+                <Link to={`/article/${id}`} className="read-more-btn">
+                    <div className="sta-news row">
+                        <button className="btn-news ">
+                            Read more
+                        </button>
+                        <span className="btn-lable">
+                            <i className="plus">+</i>
+                        </span>
+                    </div>
+                </Link>
             </div>
         </article>
     )

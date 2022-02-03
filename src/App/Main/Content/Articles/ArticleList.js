@@ -1,11 +1,12 @@
-import React from 'react'
-import ArticleListItem from './ArticleListItem'
-import articles from './articles'
+import React from 'react';
+import ArticleListItem from './ArticleListItem';
+import articles from './articles';
 
 const ArticleList = ({
-    match
+    match,
+    setCategory
 }) =>{
-    
+    console.log(match);
     return(
         <>
             {
@@ -27,6 +28,7 @@ const ArticleList = ({
                         meta={meta}
                         image={image}
                         rating={rating}
+                        setCategory={setCategory}
                     />
                    </div>
                 ))

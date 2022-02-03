@@ -52,6 +52,41 @@
 
 /* Content */
 
+.article-page{
+    justify-content: center;
+    font-family: 'Source Sans Pro',sans-serif;
+    color: #002f4b;
+}
+
+.articke-inner{
+    margin-top: -55px;    
+}
+
+.article-page>.article-image{
+    width: 100%;
+    height: auto;
+}
+
+.article-page>.article-inner>.article-title{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    padding-bottom: 20px;
+    text-align: center;        
+}
+
+.article-page>.article-inner>.article-text{
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 40px;
+}
+
+.article-page>.article-inner>.article-meta{
+    font-style: italic;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
 /* .news{
     width: 370px;
 } */
@@ -153,6 +188,9 @@
    transition: all 0.3s ease-in-out;
 }
 
+.read-more-btn{
+    text-decoration: none;
+}
 .sta-news:hover, .sta-news:hover .btn-news{
     background: #002f4b;
     color: #fff;
