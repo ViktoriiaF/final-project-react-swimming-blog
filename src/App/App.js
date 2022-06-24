@@ -8,14 +8,23 @@ import Footer from './Footer/Footer';
 const App=()=>{
     const [category, setCategory]=useState("Swimming Blog");
     const [count, setCount] = useState([0, 0, 0]);
+    const [like, setLike]=useState(false);
 
   
-   const changeCount=(count,i)=>{
-        count[i]+=1;
-        console.log(i);
-        return [...count];
-        
+   
+
+    const toogleLike=(like)=>{
+        console.log(`This is ${like}`);
+        if(like){
+            setLike(false);
+            setCount(count-1);
+        }else{
+            setLike(true);
+            setCount(count+1);
+        }
     };
+
+    
   
     return(
         
@@ -26,6 +35,7 @@ const App=()=>{
             <Main
                 setCategory={setCategory}
                 category={category}
+                toogleLike={toogleLike}
             />
             <Footer/>
         </>       

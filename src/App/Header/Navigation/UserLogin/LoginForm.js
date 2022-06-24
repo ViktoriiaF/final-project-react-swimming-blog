@@ -3,8 +3,8 @@ import React, {useState} from "react";
 
 
 function LoginForm({
-    Login,
-    Logout
+    Login 
+    
 }){
 
     const[details,setDetails]=useState({name:"",password:""})
@@ -22,11 +22,11 @@ function LoginForm({
                 <h3>Login</h3>
                 <div className="form-group">
                     <lable htmlFor="name">Name:</lable>
-                    <input type="text" name="name" id="name" onChange={e=> setDetails({...details, name: e.target.value})} value={details.name}></input>
+                    <input type="text" placeholder="Your name" name="name" id="name" onChange={e=> setDetails({...details, name: e.target.value})} value={details.name}></input>
                 </div>
                 <div className="form-group">
                     <label htmlFor="password">Password:</label>
-                    <input type="password" name="password" id="password" onChange={e=> setDetails({...details, name:e.target.value})} value={details.password}></input>
+                    <input type="password" placeholder="Password" name="password" id="password" onChange={e=> setDetails({...details, name:e.target.value})} value={details.password}></input>
                 </div>
                 <input type="submit" value="LOGIN"></input>    
             </div>

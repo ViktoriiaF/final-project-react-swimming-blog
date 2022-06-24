@@ -6,6 +6,7 @@ import { Route } from "react-router-dom";
 import './main.css';
 
 const Main = ({
+    toogleLike,
     setCategory,
     category
 }) =>{
@@ -32,6 +33,7 @@ const Main = ({
                
                 <Content
                     setCategory={setCategory}
+                    toogleLike={toogleLike}
                 /> 
 
                   

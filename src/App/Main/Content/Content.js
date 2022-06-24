@@ -6,7 +6,8 @@ import ArticlePage from './ArticlePage/ArticlePage';
 
 
 const Content=({
-    setCategory
+    setCategory,
+    toogleLike
 })=>{
     return(
         <div className="blog-content row">
@@ -17,7 +18,11 @@ const Content=({
                     setCategory={setCategory}                    
                     match={match}
                 />}/> 
-                <Route path="/article/:id" component={ArticlePage}/>              
+                <Route path="/article/:id" render={
+                    ({match})=> <ArticlePage
+                    toogleLike={toogleLike}
+                    match={match}
+                    />}/>              
             </div>
              {/* <!-- /Left Content --> */}
 

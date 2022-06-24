@@ -9,8 +9,8 @@ const Navigation=({
 
     const  handleClick =value=>(e)=> {
                   
-        setCategory(value)          
-      }
+        setCategory(value);          
+    };
     return(
         <nav>
                 <div className="container">
